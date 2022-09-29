@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #F5F5F5;
+}
+.container-banner{
+    height: 700px;
+    position: relative;
+    background: #d91111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.banner-info{
+    padding:0 3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+
+.banner-title{
+    line-height: 1.5;
+    font-size: 2.5em;
+}
+
+.banner-p{
+    line-height: 2;
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 1em;
+}
+
+.main-container h2{
+    font-size: 55px;
+    color: rgb(14, 14, 14);
+    transition: all 300ms;
+    text-align: center;
+}
+h2:hover{
+    transform: scale(1.15);
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    margin: 5%;
+    grid-gap: 30px;
+}
+.card-muestra img {
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+.card-muestra img:hover{
+    transform: scale(1.15)
+}
