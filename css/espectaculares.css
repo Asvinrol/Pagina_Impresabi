@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #F5F5F5;
+    background: #e2e2e2;
 }
 .container-banner{
     height: 700px;
@@ -27,7 +27,7 @@ body{
 }
 
 .banner-info{
-    padding:0 3em;
+    padding:0 2em;
     position: absolute;
     width: 100%;
     max-width: 700px;
@@ -53,6 +53,7 @@ body{
     color: rgb(14, 14, 14);
     transition: all 300ms;
     text-align: center;
+    background-color: #e2e2e2;
 }
 h2:hover{
     transform: scale(1.15);
@@ -71,5 +72,6 @@ h2:hover{
     position: relative;
 }
 .card-muestra img:hover{
-    transform: scale(1.15)
+    transform: scale(1.20)
 }
+
