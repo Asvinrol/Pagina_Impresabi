@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/H.png">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/9a3e2a296c.js" crossorigin="anonymous"></script>
@@ -22,27 +23,61 @@
                     <nav class="nave">
                         <ul>
                             <li class="nav-item"><a class="nav-item-link" href="#">Inicio</a></li> 
-                            <li class="nav-item"><a class="nav-item-link" href="#">Servicios</a></li> 
-                            <li class="nav-item"><a class="nav-item-link" href="#">Contacto</a></li> 
-                            <li class="nav-item"><a class="nav-item-link" href="#">Acerca de</a></li> 
+                            <li class="nav-item"><a class="nav-item-link" href="#services">Servicios</a></li> 
+                            <li class="nav-item"><a class="nav-item-link" href="#contact">Contacto</a></li> 
+                            <li class="nav-item"><a class="nav-item-link" href="#acercade">Acerca de</a></li> 
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
 
-        <div class="cover">
+        <div class="slider">
+            <section id="container-slider">	
+                <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                <ul class="listslider">
+                <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                    <li><a itlist="itList_1" href="#"></a></li>
+                    <li><a itlist="itList_2" href="#"></a></li>
+                    <li><a itlist="itList_3" href="#"></a></li>
+                </ul>
+                <ul id="slider">
+                    <li class="slider1" style="background-image: url('media/muestras/portada-web2.jpg'); z-index:0; opacity: 1;"></li>https://www.impresabi.c
+                    </li>
+                    <li class="slider2" style="background-image: url('https://www.impresabi.com/images/1.1.jpg'); ">
+                    </li>
+                    <li class="slider3" style="background-image: url('https://www.impresabi.com/images/4.1.jpg'); ">
+                    </li>
+                    <li class="slider4" style="background-image: url('https://www.impresabi.com/images/7.png'); ">
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <script defer src="./js/sliders.js"></script>
+        
+        <div class="container-services">
+            <nav>
+                <ul class="services" id="services">
+                    <li class="impresion"><a> Impresion HD</a></li>
+                    <li class="letras"><a> Letras 3D</a></li>
+                    <li class="rotulacion"><a href="/rotulacion.html">Rotulacion</a></li>
+                    <li class="cartelera"><a href="/espectaculares.html">Impresion a gran formato</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+        <div class="cover" id="acercade">
             <div class="text-information-cover">
-                <h2>Quienes somos</h2>
+                <h3>Quienes somos</h3>
                 <span>Somos una empresa vanguardista dedicada a la creaci&oacute;n, proyecci&oacute;n y promoci&oacute;n de imagen de las empresas, logrando impactar de manera r&aacute;pida y efectiva y de esta manera posicionar marcas en el mercado y en la mente de la gente.</spans>
             </div>
             <div class="media-cover">
-                <img  src="./media/fachada_abi.jpg" alt="Fachada_Abi" >
+                <video autoplay loop  >
+                    <source src="media/video_abi.mp4">
+                </video>
             </div>
-        </div>
-
-        <div class="container-servicios">
-            
         </div>
 
         <div class="container-ubication">   
@@ -63,7 +98,7 @@
         </div>
 
     </main>
-    <footer class="footer-distributed">
+    <footer class="footer-distributed" id="contact">
         <div class="footer-left">
             <div class="logo">
                 <a class="logo-img" href=""><img src="media/Logo impresabi.png" alt="impresabi-logo"></a>   
@@ -71,11 +106,11 @@
             <p class="footer-links">
                 <a href="#" class="link-1">Inicio</a>
                 
-                <a href="#">Servicios</a>
+                <a href="#services">Servicios</a>
             
-                <a href="#">Contacto</a>
+                <a href="#contact">Contacto</a>
             
-                <a href="#">Acerca de</a>
+                <a href="#acercade">Acerca de</a>
             </p>
             <p class="footer-company-name">Impresabi © 2022</p>
         </div>
@@ -96,7 +131,8 @@
         <div class="footer-right">
             <h3>Siguenos en</h3>
             <div class="footer-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/Impresabi"><i class="fa fa-facebook"></i></a>
+                <p>Impresabi</p>
             </div>
         </div>
     </footer>

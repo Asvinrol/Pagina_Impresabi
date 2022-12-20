@@ -16,7 +16,7 @@
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 55px 50px;
+    padding: 35px 30px;
 }
 
 .footer-distributed .footer-left,
@@ -217,10 +217,16 @@
     height: 600px;
 }
 
-.container-info-ubication,h3,span{
+.container-info-ubication{
     text-align: center;
     justify-content: center;
     color: black;
+    padding-top: 10px;
+    height: 100px;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto, "sans-serif";
+    font-size: 1.2rem;
 }
 
 .container-map{
@@ -228,6 +234,7 @@
     align-items:center;
     width: 600px;
     height: 100px;
+    padding-top: 25px;
 }
 
 /* ----- ----- Redes Sociales ----- ----- */
